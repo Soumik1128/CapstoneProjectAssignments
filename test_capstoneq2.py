@@ -55,6 +55,3 @@ def test_file_upload(driver):
     # Verify upload success message
     success_message = driver.find_element(By.TAG_NAME, "h3").text
     assert success_message == "File Uploaded!", f"Unexpected success message: {success_message}"
-
-    # # Cleanup sample file
-    # os.remove("sample.txt")
