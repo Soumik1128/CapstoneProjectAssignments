@@ -11,9 +11,9 @@ public class DropdownPage {
         this.driver = driver;
     }
 
-    public void selectOption1() {
+    public void selectOption1(String option){
         Select dropdown = new Select(driver.findElement(By.id("dropdown")));
-        dropdown.selectByVisibleText("Option 1");
+        dropdown.selectByVisibleText(option);
     }
 
     public boolean isOption1Selected() {
